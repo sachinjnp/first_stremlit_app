@@ -53,9 +53,9 @@ fruit_choice = streamlit.text_input('What fruit would you like information about
 streamlit.write('The user entered ', fruit_choice);
 
 if not fruit_choice
-streamlit.write('The user entered ', fruit_choice);
+  streamlit.write('The user entered ', fruit_choice);
 else
-streamlit.write('The user entered ', fruit_choice);
+  streamlit.write('The user entered ', fruit_choice);
 
 
 #import snowflake.connector;
