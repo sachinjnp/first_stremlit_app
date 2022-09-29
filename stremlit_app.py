@@ -31,8 +31,9 @@ try:
     stremlit.error("Please select a fruit to get details");
     else:
       fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+fruit_choice)
-      #streamlit.text(fruityvice_response.json());
+      #streamlit.text(fruityvice_response.json())
       fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
+      streamlit.dataframe(fruityvice_normalized);
       
 
 
@@ -40,7 +41,7 @@ try:
 
 
 # write your own comment - what does this do?
-streamlit.dataframe(fruityvice_normalized)
+
 except URLError as e:
   streamlit.error();
 #streamlite.stop();
