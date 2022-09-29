@@ -28,7 +28,7 @@ streamlit.dataframe(fruits_to_show)
 streamlit.header("Fruityvice Fruit Advice!")
 #try:
   #if not fruit_choice :
-    stremlit.error("Please select a fruit to get details");
+    #stremlit.error("Please select a fruit to get details");
    # else:
       fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+fruit_choice)
       #streamlit.text(fruityvice_response.json())
