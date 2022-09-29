@@ -26,10 +26,10 @@ streamlit.dataframe(fruits_to_show)
 #import requests
 
 streamlit.header("Fruityvice Fruit Advice!")
-try:
-  if not fruit_choice :
+#try:
+  #if not fruit_choice :
     stremlit.error("Please select a fruit to get details");
-    else:
+   # else:
       fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+fruit_choice)
       #streamlit.text(fruityvice_response.json())
       fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
@@ -42,8 +42,8 @@ try:
 
 # write your own comment - what does this do?
 
-except URLError as e:
-  streamlit.error();
+#except URLError as e:
+  #streamlit.error();
 #streamlite.stop();
 
     
