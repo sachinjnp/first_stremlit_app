@@ -54,7 +54,7 @@ streamlit.write('The user entered ', fruit_choice);
 if not fruit_choice:
   stremlit.error("Please select a fruit to get details")
   else:
-    stremlit.error("Please select a fruit to get detailsq")
+    stremlit.text("hello")
 
 
 
