@@ -54,7 +54,7 @@ streamlit.write('The user entered ', fruit_choice);
 
 if not fruit_choice
   streamlit.write('The user entered ', fruit_choice);
-else
+else:
   streamlit.write('The user entered ', fruit_choice);
 
 
