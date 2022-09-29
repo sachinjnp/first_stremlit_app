@@ -33,8 +33,14 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # write your own comment - what does this do?
 streamlit.dataframe(fruityvice_normalized)
 #streamlite.stop();
-fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
+try:
+  if not fruitchoice :
+    stremlit.error("Please select a fruit to get details")
+    else:
+fruit_choice = streamlit.text_input('What fruit would you like information about?',fruit_choice)
 streamlit.write('The user entered ', fruit_choice);
+except URLError as e:
+  streamlit.error();
 
 #import snowflake.connector;
 
